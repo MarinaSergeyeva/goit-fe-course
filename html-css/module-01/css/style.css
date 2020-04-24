@@ -1,12 +1,12 @@
 html {
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 /* * {
@@ -16,147 +16,180 @@ html {
 } */
 
 body {
-  font-family: "Playfair Display";
-  color: #626262;
-  font-weight: 400;
-  /* font-size: 14px; */
+    font-family: "Playfair Display";
+    color: #626262;
+    font-weight: 400;
 }
 
 /* style for all images */
 img {
-  display: inline-block;
-  min-width: 100%;
-  height: auto;
+    display: inline-block;
+    min-width: 100%;
+    height: auto;
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+    width: 900px;
+    margin: 0 auto;
 }
 
 h1 {
-  margin: 0px;
+    margin: 0px;
 }
 
+/* HEADER */
 .navigation {
-  vertical-align: middle;
+    padding: 70px 0 100px 0;
 }
 
 .navigation-list {
-  /* display: inline-block; */
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  text-transform: uppercase;
-  list-style: none;
-  text-align: center;
-  vertical-align: middle;
+    /* display: inline-block; */
+    /* ???при включении этого свойства меню слетает влево??? */
+    margin: 0;
+    padding: 0;
+    font-size: 0px;
+    text-transform: uppercase;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
 }
 
-/* .navigation-list-item */
 .navigation-list li {
-  display: inline-block;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
 }
 
-/* .navigation-list-item */
 .navigation-list li:not(:last-child) {
-  margin-right: 100px;
+    margin-right: 100px;
 }
 
 .navigation-list-item-link {
-  display: block;
-  color: #626262;
-  text-decoration: none;
-  text-align: center;
-}
-
-.navigation-list-item-link:hover {
-  color: #03a9f4;
-}
-
-/* .main-content {
+    display: block;
     color: #626262;
-} */
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus {
+    color: #03a9f4;
+}
+
+
+/* MAIN CONTENT */
 
 .section-title-img {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .section-list {
-  font-size: 0;
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .section-list-item {
-  list-style: none;
-  width: 470px;
-  padding: 35px 25px;
-  display: inline-block;
+    display: inline-block;
+    width: 420px;
+    margin-bottom: 130px;
 }
 
 .section-list .section-list-item:nth-last-of-type(2n) {
-  margin-right: 20px;
+    margin-right: 60px;
+}
+
+.section-list .section-list-item:nth-last-of-type(-n+2) {
+    margin-bottom: 0px;
 }
 
 .section-title {
-  color: #b4ad9e;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+    margin: 0;
+    color: #b4ad9e;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section-title a {
+    text-decoration: none;
+    color: #b4ad9e;
+}
+
+.section-title a:hover,
+.section-title a:focus {
+    color: #03a9f4;
 }
 
 .article-title {
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 36px;
-  margin-bottom: 26px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    margin-bottom: 26px;
 }
 
 .article-text {
-  text-align: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 130px;
-  overflow: hidden;
-  height: 70px;
+    margin: 0;
+    text-align: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* margin-bottom: 130px; */
+    overflow: hidden;
+    height: 70px;
 }
+
+
+/* LOAD MORE BUTTON */
 
 .load-button {
-  display: block;
-  margin: 0 auto;
-  background: #ffffff;
-  border: 1px solid #626262;
-  width: 165px;
-  height: 60px;
-  font-family: "Playfair Display";
-  font-size: 20px;
-  line-height: 24px;
-  color: #626262;
+    padding-top: 130px;
 }
 
-.load-button:hover {
-  border: 1px solid #03a9f4;
-  color: #03a9f4;
+.load-button button {
+    border: 0px;
+    margin: 0;
+    padding: 20px 35px;
+    display: block;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #626262;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    cursor: pointer;
 }
+
+.load-button button:hover,
+.load-button button:focus {
+    border: 1px solid #03a9f4;
+    color: #03a9f4;
+}
+
+
+
 
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+    position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-  white-space: nowrap;
+    white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
