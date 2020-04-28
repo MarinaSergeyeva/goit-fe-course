@@ -173,8 +173,8 @@ img {
     text-decoration: none;
 }
 
-.product-name-container:hover,
-.product-name-container:focus {
+.featured-products li:hover .product-name-container,
+.featured-products li:focus .product-name-container {
     background-color: #1abc9c;
 }
 
