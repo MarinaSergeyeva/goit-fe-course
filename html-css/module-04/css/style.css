@@ -1,12 +1,12 @@
 html {
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -15,7 +15,6 @@ body {
     font-family: "Open Sans", "Arial";
     color: #555252;
     font-weight: 400;
-    outline: 1px solid red;
 }
 
 
@@ -35,13 +34,11 @@ img {
 .container {
     width: 1110px;
     margin: 0 auto;
-    /* background-color: rgb(181, 250, 198); */
 }
 
 .page-header {
     margin-bottom: 70px;
     padding: 38px 0;
-    /* background-color: #1abc9c; */
 }
 
 .site-logo {
@@ -63,7 +60,6 @@ img {
 .site-navigation {
     float: right;
     width: 470px;
-    /* background-color: yellow; */
     margin: 0;
     margin-top: 6px;
     padding: 0;
@@ -127,12 +123,18 @@ img {
 
 .featured-products img {
     display: block;
+    height: 282px;
+    background-size: cover;
+    background-position: center;
 }
 
 .featured-products li {
-    /* float: left; */
-    width: 255px;
-    /* outline: 1px solid red; */
+    float: left;
+}
+
+.featured-products li:hover,
+.featured-products li:focus {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .featured-products li:not(:nth-child(4n)) {
@@ -144,42 +146,45 @@ img {
 }
 
 .product-name-container {
-    margin: 0;
-    padding: 0;
-    width: 255px;
-    /* height: 40px; */
     background-color: #323232;
-    outline: 1px solid red;
+    width: 255px;
+    height: 40px;
+    font-family: "Roboto",
+        "Arial";
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
 }
 
 .item-title {
+    float: left;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", "Arial";
-    font-weight: 900;
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 32px;
-    letter-spacing: -0.02em;
-    outline: 1px solid red;
+    padding-left: 14px;
+    height: 40px;
+    padding-top: 5px;
 }
 
-.price {
-    float: right;
-    width: 54px;
+.product-name-link {
     margin: 0;
     padding: 0;
-    background-color: orange;
-    font-family: "Roboto", "Arial";
-    font-weight: 900;
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 32px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    outline: 1px solid red;
+    text-decoration: none;
+}
 
-    /* background-color: red; */
+.product-name-container:hover,
+.product-name-container:focus {
+    background-color: #1abc9c;
+}
+
+span {
+    float: right;
+    width: 54px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.44);
+    padding-top: 5px;
+    text-align: center;
 }
 
 
@@ -199,10 +204,6 @@ img {
 .latest-news li:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-
-/* .latest-news li:nth-child(-n+3) {
-    margin-bottom: 80px;
-} */
 
 .article-content h3 {
     margin: 0;
@@ -229,8 +230,13 @@ img {
     height: 262px;
     background-size: cover;
     background-position: center;
+    filter: opacity(0.8);
 }
 
+.latest-news li:hover .article-content img,
+.latest-news li:focus .article-content img {
+    filter: opacity(1);
+}
 
 .article-content p {
     margin: 0;
@@ -243,11 +249,14 @@ img {
     letter-spacing: -0.02em;
 }
 
+
+/* READ MORE BUTTON */
 .read-more-button {
+    cursor: pointer;
     border: none;
     margin: 0;
     padding: 12px 40px;
-    width: 160px;
+    min-width: 160px;
     background-color: #1abc9c;
     border-radius: 3px;
     font-family: 'Open Sans', 'Arial';
@@ -259,6 +268,14 @@ img {
     text-align: center;
 }
 
+.read-more-button:hover,
+.read-more-button:focus {
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+        -23px 0 20px -23px rgba(0, 0, 0, .6),
+        23px 0 20px -23px rgba(0, 0, 0, .6),
+        inset 0 0 40px rgba(0, 0, 0, .1);
+}
 
 
 /* visually-hidden helper */
