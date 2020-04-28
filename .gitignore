@@ -350,6 +350,12 @@ MigrationBackup/
 .ionide/
 
 # Files with mockup
-.psd
-.zip
-/mockup/
+mockup/*
+
+*.zip
+*.rar
+*.log
+*.pdf
+*.xls
+*.psd
+*.code-workspace
