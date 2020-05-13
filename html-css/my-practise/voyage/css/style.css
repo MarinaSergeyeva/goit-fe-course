@@ -48,7 +48,7 @@ img {
 }
 
 
-/* TOPBAR-LOGIN */
+/* topbar-login */
 
 .topbar {
     background-color: #2c3e50;
@@ -107,7 +107,7 @@ img {
     color: #1dd2af;
 }
 
-/* TOPBAR-SOCIALS */
+/* topbar-socials */
 
 .socials {
     margin: 0;
@@ -151,7 +151,7 @@ img {
 }
 
 
-/* NAVIGATION */
+/* navigation */
 
 .navigation {
     height: 92px;
@@ -224,6 +224,86 @@ img {
     background-position-x: 165px;
     border: 2px solid #1dd2af;
 }
+
+
+/* banner */
+
+.banner {
+    min-height: 700px;
+    background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
+        url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.banner-title {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 280px;
+    margin-bottom: 25px;
+}
+
+.banner-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.banner-buttons-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-content: center;
+}
+
+.banner-buttons {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px;
+    float: left;
+}
+
+
+
+.banner-buttons:hover,
+.banner-buttons:focus {
+    border: 2px solid #1dd2af;
+    background-color: #1dd2af;
+}
+
+.Shape_12 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(29, 210, 175);
+    border-radius: 4px;
+    background-color: rgb(29, 210, 175);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 222px;
+    height: 59px;
+    z-index: 1;
+}
+
+
+
+
 
 
 
