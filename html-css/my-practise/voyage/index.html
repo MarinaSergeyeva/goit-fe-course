@@ -1,154 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voyage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voyage</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+  <body>
+    <header class="page-header">
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="container clearfix">
+          <ul class="login">
+            <li><a href="#" class="icon-agent">Agent Login</a></li>
+            <li><a href="#" class="icon-customer">Customer Login</a></li>
+            <li>
+              <a href="#" class="icon-register"
+                >Not a Member? <span>Register</span></a
+              >
+            </li>
+            <li>
+              <a href="tel:8151234567"
+                >Call Us Now: <span>815-123-4567</span></a
+              >
+            </li>
+          </ul>
 
-<body>
-  <header class="page-header">
-    <!-- TOPBAR -->
-    <div class="topbar">
-      <div class="container clearfix">
-        <ul class="login">
-          <li> <a href="#" class="icon-agent">Agent Login</a> </li>
-          <li> <a href="#" class="icon-customer">Customer Login</a> </li>
-          <li> <a href="#" class="icon-register">Not a Member? <span>Register</span></a></li>
-          <li> <a href="tel:8151234567">Call Us Now: <span>815-123-4567</span></a></li>
-        </ul>
-
-        <ul class="socials">
-          <li> <a href="#" class="icon-facebook">
-              <span class="visually-hidden">Facebook</span> </a> </li>
-          <li> <a href="#" class="icon-twitter">
-              <span class="visually-hidden">Twitter</span> </a> </li>
-          <li> <a href="#" class="icon-t">
-              <span class="visually-hidden">T</span> </a> </li>
-          <li> <a href="#" class="icon-pinterest">
-              <span class="visually-hidden">Pinterest</span> </a> </li>
-        </ul>
+          <ul class="socials">
+            <li>
+              <a href="#" class="icon-facebook">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-twitter">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-t">
+                <span class="visually-hidden">T</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-pinterest">
+                <span class="visually-hidden">Pinterest</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <!-- NAVIGATION -->
-    <div class="navigation container clearfix">
-      <a href="#" class="logo">V<b>o</b>yage</a>
-      <nav>
-        <ul class="navigation-list">
-          <li> <a href="#">
-              <span>Home</span> </a> </li>
-          <li> <a href="#">
-              <span>Destinations</span> </a> </li>
-          <li> <a href="#">
-              <span>Criuses</span> </a> </li>
-          <li> <a href="#">
-              <span>Specials</span> </a> </li>
-          <li> <a href="#">
-              <span>Holidays</span> </a> </li>
-          <li> <a href="#">
-              <span>Blog</span> </a> </li>
-          <li class="icon-search"> <a href="#">
-              <span class="visually-hidden">Search</span> </a> </li>
+      <!-- NAVIGATION -->
+      <nav class="navigation container">
+        <a href="#" class="logo">V<b>o</b>yage</a>
+        <ul class="navigation-list clearfix">
+          <li>
+            <a href="#"> <span>Home</span> </a>
+          </li>
+          <li>
+            <a href="#"> <span>Destinations</span> </a>
+          </li>
+          <li>
+            <a href="#"> <span>Criuses</span> </a>
+          </li>
+          <li>
+            <a href="#"> <span>Specials</span> </a>
+          </li>
+          <li>
+            <a href="#"> <span>Holidays</span> </a>
+          </li>
+          <li>
+            <a href="#"> <span>Blog</span> </a>
+          </li>
+          <li class="icon-search">
+            <a href="#"> <span class="visually-hidden">Search</span> </a>
+          </li>
         </ul>
       </nav>
-    </div>
 
-    <!-- <div class="search"></div> -->
+      <!-- <div class="search"></div> -->
 
-    <div class="banner">
-      <h2 class="banner-title">To travel is to live</h2>
-      <p class="banner-text">You Don't Need Magic to Disappear. All you need is a destination.</p>
+      <!-- BANNER -->
+      <div class="banner">
+        <h2 class="banner-title">To travel is to live</h2>
+        <p class="banner-text">
+          You Don't Need Magic to Disappear. All you need is a destination.
+        </p>
 
-      <ul class="banner-buttons-list">
-        <li> <a href="#" class="banner-buttons">Show on the Map</a></li>
-        <li> <a href="#" class="banner-buttons">More Info</a></li>
-      </ul>
-    </div>
+        <ul class="banner-buttons-list clearfix">
+          <li><a href="#" class="banner-buttons">Show on the Map</a></li>
+          <li><a href="#" class="banner-buttons">More Info</a></li>
+        </ul>
+      </div>
 
-    <div class="holidays-pack"></div>
-  </header>
+      <!-- holiday-pack -->
+      <div class="holidays-pack">
+        <div class="container">
+          <ul class="holidays-search clearfix">
+            <li class="holidays-pack-container-text">
+              <p class="holidays-pack-text">Find Your</p>
+              <p class="holidays-pack-title">Holidays</p>
+            </li>
+            <li class="holiday-search-field">
+              <p class="search-text">Where</p>
+              <a href="#" class="holidays-destination"
+                ><span class="visually-hidden">Destination</span></a
+              >
+            </li>
+            <li class="holiday-search-field">
+              <p class="search-text">When</p>
+              <a href="#" class="holidays-date"
+                ><span class="visually-hidden">Select date</span></a
+              >
+            </li>
+            <li class="holiday-search-press">
+              <a href="#">Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-  <main>
+    <main>
+      <!-- Special Offers Section -->
+      <div class="container">
+        <section class="special-offers">
+          <h3 class="special-offers-title">Special Offers</h3>
+          <p class="special-offers-text">
+            Best 2014 packages where people love to stay!
+          </p>
+          <ul class="clearfix">
+            <li>
+              <img
+                src="./img/fountain.jpg"
+                alt="fountain photo"
+                width="267"
+                height="193"
+              />
+              <h4 class="offer-title">Spectacular Seychelles</h4>
+              <p class="offer-text">New Destination!</p>
+            </li>
+            <li>
+              <img
+                src="./img/boats.jpg"
+                alt="boats photo"
+                width="267"
+                height="193"
+              />
+              <h4 class="offer-title">Hong Kong & Macau</h4>
+              <p class="offer-text">Bonus Extras!</p>
+            </li>
+            <li>
+              <img
+                src="./img/eiffel-tower.jpg"
+                alt="fountain photo"
+                width="267"
+                height="193"
+              />
+              <h4 class="offer-title">Vietnam Highlights</h4>
+              <p class="offer-text">New Destination!</p>
+            </li>
+            <li>
+              <img
+                src="./img/mountains.jpg"
+                alt="fountain photo"
+                width="267"
+                height="193"
+              />
+              <h4 class="offer-title">Spectacular Seychelles</h4>
+              <p class="offer-text">New Destination!</p>
+            </li>
+          </ul>
+        </section>
+      </div>
 
-    <!-- Special Offers Section -->
-    <section class="special-offers">
-      <h3 class="spesial-offers-title">Special Offers</h3>
-      <p>Best 2014 packages where people love to stay!</p>
-      <ul>
-        <li>
-          <img src="./img/fountain.jpg" alt="fountain photo" width="267" height="193" />
-          <h4>Spectacular Seychelles</h4>
-          <p>New Destination!</p>
-        </li>
-        <li>
-          <img src="./img/boats.jpg" alt="boats photo" width="267" height="193" />
-          <h4>Hong Kong & Macau</h4>
-          <p>Bonus Extras!</p>
-        </li>
-        <li>
-          <img src="./img/eiffel-tower.jpg" alt="fountain photo" width="267" height="193" />
-          <h4>Vietnam Highlights</h4>
-          <p>New Destination!</p>
-        </li>
-        <li>
-          <img src="./img/mountains.jpg" alt="fountain photo" width="267" height="193" />
-          <h4>Spectacular Seychelles</h4>
-          <p>New Destination!</p>
-        </li>
-      </ul>
-    </section>
+      <!-- Holiday Type Section -->
+      <section class="holiday-type">
+        <h3>Holidays Type</h3>
+        <p>get explore your dream to travel the world!</p>
+        <ul>
+          <li>Cruise</li>
+          <li>City Breaks</li>
+          <li>Honeymoon</li>
+          <li>Adventure</li>
+          <li>Safari</li>
+          <li>Beach</li>
+        </ul>
+      </section>
 
+      <!-- Reviews Section -->
+      <section class="reviews">
+        <h3>Happy Clients</h3>
+        <p>what customer say about us and why love our services!</p>
+        <ul>
+          <li>
+            <p class="review-text">
+              Lorem Ipsum is simply dummy text of the printing and typese tting
+              industry. Lorem Ipsum has been the industry's.
+            </p>
+            <p class="client-name">Client Name</p>
+            <p class="client-country">United States</p>
+          </li>
+          <li>
+            <p class="review-text">
+              Lorem Ipsum is simply dummy text of the printing and typeset
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever hen an with new version look.
+            </p>
+            <p class="client-name">Client Name</p>
+            <p class="client-country">United States</p>
+          </li>
+          <li>
+            <p class="review-text">
+              Lorem Ipsum is simply dummy text of the printing and typese tting
+              industry. Lorem Ipsum has been the industry's.
+            </p>
+            <p class="client-name">Client Name</p>
+            <p class="client-country">United States</p>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-    <!-- Holiday Type Section -->
-    <section class="holiday-type">
-      <h3>Holidays Type</h3>
-      <p>get explore your dream to travel the world!</p>
-      <ul>
-        <li>Cruise</li>
-        <li>City Breaks</li>
-        <li>Honeymoon</li>
-        <li>Adventure</li>
-        <li>Safari</li>
-        <li>Beach</li>
-      </ul>
-    </section>
-
-
-    <!-- Reviews Section -->
-    <section class="reviews">
-      <h3>Happy Clients</h3>
-      <p>what customer say about us and why love our services!</p>
-      <ul>
-        <li>
-          <p class="review-text">Lorem Ipsum is simply dummy text of the printing and typese tting industry. Lorem Ipsum
-            has been the industry's.</p>
-          <p class="client-name">Client Name</p>
-          <p class="client-country">United States</p>
-        </li>
-        <li>
-          <p class="review-text">Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has
-            been the industry's standard
-            dummy text ever hen an with new version look.</p>
-          <p class="client-name">Client Name</p>
-          <p class="client-country">United States</p>
-        </li>
-        <li>
-          <p class="review-text">Lorem Ipsum is simply dummy text of the printing and typese tting industry. Lorem Ipsum
-            has been
-            the industry's.</p>
-          <p class="client-name">Client Name</p>
-          <p class="client-country">United States</p>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>Footer will be Here</p>
-  </footer>
-</body>
-
+    <footer>
+      <p>Footer will be Here</p>
+    </footer>
+  </body>
 </html>
