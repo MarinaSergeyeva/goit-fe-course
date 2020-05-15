@@ -150,8 +150,7 @@ img {
 /* navigation */
 
 .navigation {
-  /* height: 92px; */
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.25); */
   /* background-color: hotpink; */
 }
 
@@ -649,6 +648,73 @@ img {
 
 .icon-beach::before {
   background-image: url(../img/icons/icons-holiday/icon-beach.png);
+}
+
+/* REVIEW SECTION */
+
+.reviews-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.reviews li {
+  width: 475px;
+  height: 140px;
+  border: 1px solid #dedede;
+  float: left;
+  opacity: 50%;
+}
+
+.review-fill {
+  padding: 15px 25px;
+}
+
+.reviews li:hover,
+.reviews li:focus {
+  opacity: 100%;
+}
+
+.reviews li:hover::before,
+.reviews li:focus::before {
+  content: '';
+  margin: 0;
+  padding: 0;
+  height: 4px;
+  display: block;
+  background-color: #1dd2af;
+}
+
+.reviews li:not(:last-child) {
+  margin-right: 14px;
+}
+
+.review-text,
+.client-name,
+.client-country {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.review-text {
+  font-size: 15px;
+  line-height: 21px;
+  color: #4d4d4d;
+  margin-bottom: 9px;
+}
+
+.client-name {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1dd2af;
+}
+
+.client-country {
+  font-size: 13px;
+  line-height: 25px;
+  color: #b2b2b2;
 }
 
 /* visually-hidden helper */
