@@ -415,7 +415,11 @@ img {
 
 /*  SPECIAL OFFERS SECTION */
 
-.special-offers-title {
+.special-offers {
+  margin-bottom: 150px;
+}
+
+.section-title {
   margin: 0;
   padding: 0;
   font-size: 25px;
@@ -424,9 +428,10 @@ img {
   color: #2c3e50;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 12px;
 }
 
-.special-offers-text {
+.section-text {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -550,6 +555,100 @@ img {
   background-image: url(../img/icons/icon-arrow-down.png);
   background-repeat: no-repeat;
   float: right;
+}
+
+/* HOLIDAY TYPE SECTION */
+
+.holiday-type {
+  margin-bottom: 67px;
+}
+
+.holiday-banner {
+  margin: auto;
+  min-height: 520px;
+  background-image: linear-gradient(
+      rgba(44, 62, 80, 0.8),
+      rgba(44, 62, 80, 0.8)
+    ),
+    url(../img/holiday-banner.jpg);
+  /* background-blend-mode: saturation; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 79px;
+}
+
+.holiday-banner h3 {
+  color: #ffffff;
+}
+
+.holiday-banner p {
+  color: #9eafc0;
+}
+
+.holiday-type-list {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+  font-size: 20px;
+  line-height: 58px;
+  font-weight: 400;
+  color: #9dafc0;
+}
+
+.holiday-type-list li {
+  float: left;
+}
+
+.holiday-type-list li:not(:last-child) {
+  margin-right: 37px;
+}
+
+.holiday-type-list li::before {
+  content: '';
+  display: block;
+  width: 158px;
+  height: 158px;
+  border-radius: 79px;
+  border: 5px solid #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.holiday-type-list li:hover::before,
+.holiday-type-list li:focus::before {
+  border: 5px solid #1dd2af;
+}
+
+.holiday-type-list li:hover,
+.holiday-type-list li:focus {
+  color: #1dd2af;
+}
+
+.icon-cruise::before {
+  background-image: url(../img/icons/icons-holiday/icon-cruise.png);
+}
+
+.icon-city::before {
+  background-image: url(../img/icons/icons-holiday/icon-city.png);
+}
+
+.icon-honeymoon::before {
+  background-image: url(../img/icons/icons-holiday/icon-honeymoon.png);
+}
+
+.icon-adventure::before {
+  background-image: url(../img/icons/icons-holiday/icon-adventure.png);
+}
+
+.icon-safari::before {
+  background-image: url(../img/icons/icons-holiday/icon-safari.png);
+}
+
+.icon-beach::before {
+  background-image: url(../img/icons/icons-holiday/icon-beach.png);
 }
 
 /* visually-hidden helper */
