@@ -78,7 +78,7 @@
             <a href="#"> <span>Blog</span> </a>
           </li>
           <li class="icon-search">
-            <a href="#"> <span class="visually-hidden">Search</span> </a>
+            <input type="text" class="search" />
           </li>
         </ul>
       </nav>
@@ -106,20 +106,26 @@
               <p class="holidays-pack-text">Find Your</p>
               <p class="holidays-pack-title">Holidays</p>
             </li>
-            <li class="holiday-search-field">
-              <p class="search-text">Where</p>
-              <a href="#" class="holidays-destination"
-                ><span class="visually-hidden">Destination</span></a
-              >
+            <li>
+              <label for="destination">Where</label>
+              <input
+                type="text"
+                name="destination"
+                placeholder="destination"
+                class="destination-field"
+              />
             </li>
-            <li class="holiday-search-field">
-              <p class="search-text">When</p>
-              <a href="#" class="holidays-date"
-                ><span class="visually-hidden">Select date</span></a
-              >
+            <li>
+              <label for="date">When</label>
+              <input
+                type="text"
+                name="date"
+                placeholder="Select date"
+                class="date-field"
+              />
             </li>
             <li class="holiday-search-press">
-              <a href="#">Search</a>
+              <button class="search-button">Search</button>
             </li>
           </ul>
         </div>
@@ -135,43 +141,21 @@
             Best 2014 packages where people love to stay!
           </p>
           <ul class="clearfix">
-            <li>
-              <img
-                src="./img/fountain.jpg"
-                alt="fountain photo"
-                width="267"
-                height="193"
-              />
-              <h4 class="offer-title">Spectacular Seychelles</h4>
-              <p class="offer-text">New Destination!</p>
+            <li class="offer-img-fountain">
+              <div>
+                <h4 class="offer-title">Spectacular Seychelles</h4>
+                <p class="offer-text">New Destination!</p>
+              </div>
             </li>
-            <li>
-              <img
-                src="./img/boats.jpg"
-                alt="boats photo"
-                width="267"
-                height="193"
-              />
+            <li class="offer-img-boats">
               <h4 class="offer-title">Hong Kong & Macau</h4>
               <p class="offer-text">Bonus Extras!</p>
             </li>
-            <li>
-              <img
-                src="./img/eiffel-tower.jpg"
-                alt="fountain photo"
-                width="267"
-                height="193"
-              />
+            <li class="offer-img-eiffel-tower">
               <h4 class="offer-title">Vietnam Highlights</h4>
               <p class="offer-text">New Destination!</p>
             </li>
-            <li>
-              <img
-                src="./img/mountains.jpg"
-                alt="fountain photo"
-                width="267"
-                height="193"
-              />
+            <li class="offer-img-mountains">
               <h4 class="offer-title">Spectacular Seychelles</h4>
               <p class="offer-text">New Destination!</p>
             </li>

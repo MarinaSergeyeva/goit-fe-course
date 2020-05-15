@@ -204,23 +204,24 @@ img {
   margin-top: 37px;
 }
 
-.icon-search a {
+.search {
   display: block;
   width: 42px;
   height: 42px;
+  background-image: url(../img/icons/icon-search.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/icons/icon-search.png);
   border-radius: 21px;
   border: 2px solid #2c3e50;
   margin-top: 25px;
 }
 
-.icon-search a:hover,
-.icon-search a:focus {
+.search:hover,
+.search:focus {
   width: 200px;
   background-position-x: 165px;
   border: 2px solid #1dd2af;
+  padding: 5px 10px;
 }
 
 /* banner */
@@ -341,18 +342,7 @@ img {
   margin-top: 7px;
 }
 
-.holiday-search-field {
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  /* font-weight: 300;
-  font-size: 22px;
-  line-height: 30px;
-  color: #9fb0c0; */
-  /* margin-top: 7px; */
-}
-
-.search-text {
+.holidays-search label {
   margin: 0;
   padding: 0;
   font-weight: 300;
@@ -360,60 +350,70 @@ img {
   line-height: 30px;
   color: #9fb0c0;
   margin-top: 7px;
+  margin-right: 10px;
   float: left;
 }
 
-.holidays-destination {
-  float: right;
-}
-
-.holidays-destination::before {
-  content: '';
-  display: block;
+/* .holidays-search input {
+  border: 1px solid #19242e;
   width: 326px;
   height: 49px;
-  background-color: #ffffff;
-  border: 1px solid #19242e;
+} */
+
+.destination-field {
+  padding: 8px 40px 8px 10px;
   background-image: url(../img/icons/icon-globe.png);
   background-repeat: no-repeat;
   background-position-x: 290px;
   background-position-y: 11px;
-}
-
-.holidays-date {
-  float: right;
-}
-
-.holidays-date::before {
-  content: '';
-  display: block;
+  border: 1px solid #19242e;
   width: 326px;
   height: 49px;
-  background-color: #ffffff;
-  border: 1px solid #19242e;
+}
+
+.destination-field::placeholder {
+  font-size: 20px;
+  line-height: 30;
+  font-weight: 400;
+  color: #8a8a8a;
+  vertical-align: center;
+}
+
+.date-field {
+  padding: 8px 40px 8px 10px;
   background-image: url(../img/icons/icon-calendar.png);
   background-repeat: no-repeat;
   background-position-x: 290px;
   background-position-y: 11px;
+  border: 1px solid #19242e;
+  width: 326px;
+  height: 49px;
 }
 
-.holiday-search-press a {
+.date-field::placeholder {
+  font-size: 20px;
+  line-height: 30;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.search-button {
   display: block;
   margin: 0;
   padding: 0;
   width: 108px;
   height: 49px;
   background-color: #1dd2af;
+  border-style: none;
   text-decoration: none;
   color: #ffffff;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  padding: 9px 24px;
   margin-top: 7px;
 }
 
-/*  SPECIAL PFFERS SECTION */
+/*  SPECIAL OFFERS SECTION */
 
 .special-offers-title {
   margin: 0;
@@ -443,20 +443,24 @@ img {
   padding: 0;
 }
 
-.special-offers img {
-  margin-bottom: 15px;
-  max-height: 192px;
-  width: auto;
-  background-position: center;
-}
-
 .special-offers li {
   display: block;
-  width: 267px;
-  height: 250px;
+  width: 275px;
+  height: 260px;
   background-color: rgb(238, 238, 238);
   border: 5px solid #eeeeee;
-  box-shadow: 0px 2px 1px 0px rgba(194, 193, 193, 0.75);
+  border-radius: 5px;
+  float: left;
+}
+
+.special-offers li:hover,
+.special-offers li:focus {
+  display: block;
+  width: 275px;
+  height: 310px;
+  background-color: #2c3e50;
+  border: 5px solid #1dd2af;
+  border-radius: 5px;
   float: left;
 }
 
@@ -472,7 +476,6 @@ img {
   font-weight: 400;
   color: #626262;
   margin-bottom: 6px;
-  padding-left: 14px;
 }
 
 .offer-text {
@@ -482,7 +485,71 @@ img {
   line-height: 17px;
   font-weight: 400;
   color: #626262;
-  padding-left: 14px;
+}
+
+.offer-img-fountain div {
+  margin-left: 14px;
+  /* background-color: plum; */
+  float: left;
+}
+
+.special-offers li::before {
+  content: '';
+  display: block;
+  width: 265px;
+  height: 193px;
+  margin-bottom: 15px;
+}
+
+.special-offers li:hover::before {
+  content: '';
+  display: block;
+  width: 265px;
+  height: 225px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.offer-img-fountain::before {
+  background-image: url(../img/fountain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-img-boats::before {
+  background-image: url(../img/boats.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-img-eiffel-tower::before {
+  background-image: url(../img/eiffel-tower.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-img-mountains::before {
+  background-image: url(../img/mountains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-img-fountain div::after {
+  content: '';
+  display: block;
+  width: 17px;
+  height: 10px;
+  /* background-color: red; */
+  background-image: url(../img/icons/icon-arrow-down.png);
+  background-repeat: no-repeat;
+  float: right;
 }
 
 /* visually-hidden helper */
