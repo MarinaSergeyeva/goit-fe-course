@@ -40,13 +40,14 @@
 
     <main>
         <section class="slider">
-            <div class="banner">
-                <div class="container">
-                    <button class="slider-button"><a href="#" class="button-arrow"><i
-                                class="pe-7s-home"></i></a></button>
-                    <h2 class="banner-title">Affordable Paris Tours</h2>
-                    <p class="banner-description">City Tours / Tour Tickets / Tour Guides</p>
-                    <button class="slider-button"></button>
+            <div class="container">
+                <div class="banner">
+                    <button class="slider-ctrl slider-ctrl-prev"><a href="#" class="button-arrow">Prev</a></button>
+                    <button class="slider-ctrl slider-ctrl-next"><a href="#" class="button-arrow">Next</a></button>
+                    <div class="slider-description">
+                        <h2 class="banner-title">Affordable Paris Tours</h2>
+                        <p class="banner-description">City Tours / Tour Tickets / Tour Guides</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -56,6 +57,7 @@
                 <h2 class="section-title">New Collection</h2>
                 <ul class="catalog clearfix">
                     <li class="catalog-item">
+                        <!-- <div class="overlay"></div> -->
                         <a href="#" class="catalog-item-link-image">
                             <img src="./images/catalog/item-1.png" alt="no item image"
                                 class="catalog-item-link-image-photo"></a>
@@ -65,6 +67,22 @@
                         </a>
                     </li>
                     <li class="catalog-item">
+                        <div class="overlay">
+                            <div class="card-buttons">
+                                <ul class="action-buttons clearfix">
+                                    <li class="action-buttons-item">
+                                        <button class="action-button">Heart</button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button">Arrows</button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button">Clock</button>
+                                    </li>
+                                    <button class="action-button-add">Add to card</button>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#" class="catalog-item-link-image">
                             <img src="./images/catalog/item-2.png" alt="no item image"
                                 class="catalog-item-link-image-photo"></a>
