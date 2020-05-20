@@ -175,6 +175,7 @@ a {
   height: 104px;
   background-color: #4ec6ab;
   font-size: 24px;
+  color: #ffffff;
   text-transform: uppercase;
   opacity: 0.65;
 }
@@ -192,9 +193,7 @@ a {
   float: right;
 }
 
-.button-arrow {
-  color: #ffffff;
-}
+
 
 /* CATALOG */
 
