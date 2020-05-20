@@ -2,15 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module 05</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="./css/pe-icon-7-stroke/css/helper.css">
+
 </head>
 
 <body>
@@ -22,17 +26,23 @@
             <nav class="navigation clearfix">
                 <ul class="navigation__list clearfix">
                     <li class="navigation__list-item">
-                        <a href="#" class="navigation__list-item-link">Home</a></li>
+                        <a href="#" class="navigation__list-item-link">Home</a>
+                    </li>
                     <li class="navigation__list-item">
-                        <a href="#" class="navigation__list-item-link">About us</a></li>
+                        <a href="#" class="navigation__list-item-link">About us</a>
+                    </li>
                     <li class="navigation__list-item">
-                        <a href="#" class="navigation__list-item-link">Page</a></li>
+                        <a href="#" class="navigation__list-item-link">Page</a>
+                    </li>
                     <li class="navigation__list-item">
-                        <a href="#" class="navigation__list-item-link">Shop</a></li>
+                        <a href="#" class="navigation__list-item-link">Shop</a>
+                    </li>
                     <li class="navigation__list-item">
-                        <a href="#" class="navigation__list-item-link">Blog</a></li>
+                        <a href="#" class="navigation__list-item-link">Blog</a>
+                    </li>
                     <li class="navigation__list-item">
-                        <a href="#" class="navigation__list-item-link">Contact us</a></li>
+                        <a href="#" class="navigation__list-item-link">Contact us</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -40,14 +50,22 @@
 
     <main>
         <section class="slider">
-            <div class="container">
-                <div class="banner">
-                    <button class="slider-ctrl slider-ctrl-prev"><a href="#" class="button-arrow">Prev</a></button>
-                    <button class="slider-ctrl slider-ctrl-next"><a href="#" class="button-arrow">Next</a></button>
-                    <div class="slider-description">
-                        <h2 class="banner-title">Affordable Paris Tours</h2>
-                        <p class="banner-description">City Tours / Tour Tickets / Tour Guides</p>
-                    </div>
+            <img src="./images/banner/banner.jpg" alt="slider background" class="slider-background" width="1600px"
+                height="600px" />
+            <div class="container slider-wrapper">
+                <div class="banner-text-wrapper">
+                    <h2 class="banner-title">Affordable Paris Tours</h2>
+                    <p class="banner-description">
+                        City Tours / Tour Tickets / Tour Guides
+                    </p>
+                </div>
+                <div class="slider-buttons">
+                    <button class="slider-ctrl prev">
+                        <a href="#" class="button-arrow"><i class="pe-7s-angle-left pe-4x pe-va"></i></a>
+                    </button>
+                    <button class="slider-ctrl next">
+                        <a href="#" class="button-arrow"><i class="pe-7s-angle-right pe-4x pe-va"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -57,53 +75,131 @@
                 <h2 class="section-title">New Collection</h2>
                 <ul class="catalog clearfix">
                     <li class="catalog-item">
-                        <!-- <div class="overlay"></div> -->
-                        <a href="#" class="catalog-item-link-image">
-                            <img src="./images/catalog/item-1.png" alt="no item image"
-                                class="catalog-item-link-image-photo"></a>
+                        <div class="catalog-item-image">
+                            <img src="./images/catalog/item-1.png" alt="no item image" width="255px" height="282px"
+                                class="catalog-item-link-image-photo" />
+
+                            <div class="overlay">
+                                <ul class="action-buttons clearfix">
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-like pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-shuffle pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-clock pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button add-to-cart"><i
+                                                class="pe-7s-cart pe-2x pe-va"></i>Add to cart</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <a href="#" class="catalog-item-link-description clearfix">
                             <h3 class="catalog-item-title">Blue Tshirt</h3>
                             <p class="catalog-item-price">$26</p>
                         </a>
                     </li>
+
                     <li class="catalog-item">
-                        <div class="overlay">
-                            <div class="card-buttons">
+                        <div class="catalog-item-image">
+                            <img src="./images/catalog/item-2.png" alt="no item image" width="255px" height="282px"
+                                class="catalog-item-link-image-photo" />
+
+                            <div class="overlay">
                                 <ul class="action-buttons clearfix">
                                     <li class="action-buttons-item">
-                                        <button class="action-button">Heart</button>
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-like pe-2x pe-va"></i></button>
                                     </li>
                                     <li class="action-buttons-item">
-                                        <button class="action-button">Arrows</button>
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-shuffle pe-2x pe-va"></i></button>
                                     </li>
                                     <li class="action-buttons-item">
-                                        <button class="action-button">Clock</button>
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-clock pe-2x pe-va"></i></button>
                                     </li>
-                                    <button class="action-button-add">Add to card</button>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button add-to-cart"><i
+                                                class="pe-7s-cart pe-2x pe-va"></i>Add to cart</button>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <a href="#" class="catalog-item-link-image">
-                            <img src="./images/catalog/item-2.png" alt="no item image"
-                                class="catalog-item-link-image-photo"></a>
+
                         <a href="#" class="catalog-item-link-description clearfix">
                             <h3 class="catalog-item-title">Woman shirt</h3>
                             <p class="catalog-item-price">$31</p>
                         </a>
                     </li>
+
                     <li class="catalog-item">
-                        <a href="#" class="catalog-item-link-image">
-                            <img src="./images/catalog/item-3.png" alt="no item image"
-                                class="catalog-item-link-image-photo"></a>
+                        <div class="catalog-item-image">
+                            <img src="./images/catalog/item-3.png" alt="no item image" width="255px" height="282px"
+                                class="catalog-item-link-image-photo" />
+
+                            <div class="overlay">
+                                <ul class="action-buttons clearfix">
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-like pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-shuffle pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-clock pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button add-to-cart"><i
+                                                class="pe-7s-cart pe-2x pe-va"></i>Add to cart</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <a href="#" class="catalog-item-link-description clearfix">
                             <h3 class="catalog-item-title">Yellow Tshirt</h3>
                             <p class="catalog-item-price">$21</p>
                         </a>
                     </li>
+
                     <li class="catalog-item">
-                        <a href="#" class="catalog-item-link-image">
-                            <img src="./images/catalog/item-4.png" alt="no item image"
-                                class="catalog-item-link-image-photo"></a>
+                        <div class="catalog-item-image">
+                            <img src="./images/catalog/item-4.png" alt="no item image" width="255px" height="282px"
+                                class="catalog-item-link-image-photo" />
+
+                            <div class="overlay">
+                                <ul class="action-buttons clearfix">
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-like pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-shuffle pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button inform"><i
+                                                class="pe-7s-clock pe-2x pe-va"></i></button>
+                                    </li>
+                                    <li class="action-buttons-item">
+                                        <button class="action-button add-to-cart"><i
+                                                class="pe-7s-cart pe-2x pe-va"></i>Add to cart</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <a href="#" class="catalog-item-link-description clearfix">
                             <h3 class="catalog-item-title">Cool lingerie</h3>
                             <p class="catalog-item-price">$56</p>
@@ -116,12 +212,12 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer-description">All Rights Reserved © Dokan | Designed <a href="#"
-                    class="footer-designed-link">ThemenGraph</a></p>
-
+            <p class="footer-description">
+                All Rights Reserved © Dokan | Designed
+                <a href="#" class="footer-designed-link">ThemenGraph</a>
+            </p>
         </div>
     </footer>
-
 </body>
 
 </html>
