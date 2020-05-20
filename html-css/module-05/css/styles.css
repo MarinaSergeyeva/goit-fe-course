@@ -55,10 +55,11 @@ a {
 
 .header {
   padding-top: 36px;
+  padding-bottom: 32px;
 }
 
 .navigation {
-  margin-bottom: 32px;
+  float: right;
   /* background-color: tomato; */
 }
 
@@ -135,10 +136,9 @@ a {
 }
 
 .banner-text-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(25%, -50%);
+  width: 738px;
+  margin: 0 auto;
+  transform: translateY(-50%);
 }
 
 .slider-buttons {
@@ -266,7 +266,6 @@ a {
 
 .catalog-item-link-description {
   display: block;
-  width: 255px;
   background-color: #323232;
   color: #ffffff;
   line-height: 40px;
@@ -295,9 +294,9 @@ a {
 
 .action-buttons {
   position: absolute;
-  bottom: 85px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .pe-7s-cart {
