@@ -9,9 +9,6 @@
     --secondary-font-color: #999999;
 }
 
-
-
-
 html {
     box-sizing: border-box;
 }
@@ -72,7 +69,6 @@ a {
     background-color: teal;
     padding-top: 40px;
     padding-bottom: 40px;
-
 }
 
 .logo {
@@ -122,6 +118,10 @@ a {
     float: left;
 }
 
+.team__list-item:hover .overlay {
+    opacity: 1;
+}
+
 .team__list-item-image-wrapper {
     position: relative;
 }
@@ -131,13 +131,18 @@ a {
     top: 0;
     left: 0;
     background-color: rgba(85, 85, 85, 0.5);
+    background-clip: padding-box;
+    border: 10px solid rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 100%;
+    opacity: 0;
 }
 
 .social-icons__list {
     position: absolute;
-    /* transform: translateX(-50%); */
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .social-icons__list-item {
@@ -161,7 +166,6 @@ a {
 .facebook {
     background-image: url(../img/team/icon-fb.png);
 }
-
 
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
