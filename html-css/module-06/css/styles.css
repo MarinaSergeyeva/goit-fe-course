@@ -103,8 +103,7 @@ a {
   /* margin-top: 13px; */
 }
 
-.navigation__list-item {
-}
+.navigation__list-item {}
 
 .navigation__list-item-link:hover,
 .navigation__list-item-link:focus {
@@ -184,20 +183,21 @@ a {
   display: block;
   width: 402px;
   margin-bottom: 98px;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
-.services__list-item::before {
+/* .services__list-item::before {
   display: inline-block;
   content: '';
   width: 32px;
   height: 32px;
-  /* background-color: blue; */
-}
+  background-color: blue;
+} */
 
 .photography {
   background-image: url(../img/services/icon-photography.png);
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 
 .web-design {
@@ -273,11 +273,9 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to top,
-    var(--third-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(to top,
+      var(--third-color),
+      var(--secondary-color));
 }
 
 .socials__list-item-link {
