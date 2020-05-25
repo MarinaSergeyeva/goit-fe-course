@@ -269,7 +269,12 @@ a {
 
 .contact-form-fields-wrapper {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 28px;
+}
+
+.contact-form-fields-list {
+  width: calc((100% - 28px) / 2);
 }
 
 .contact-form-fields-list-item:not(:last-child) {
@@ -297,8 +302,10 @@ a {
 .contact-form-fields-list-item-input::placeholder,
 .contact-form-fields-textarea::placeholder {
   font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.2;
   letter-spacing: -0.35px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   color: #bbbbbb;
 }
