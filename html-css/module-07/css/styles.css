@@ -141,6 +141,8 @@ a {
 .navigation {
   display: flex;
   justify-content: space-between;
+  padding-top: 52px;
+  padding-bottom: 16px;
 }
 
 .navigation__list {
