@@ -1,33 +1,109 @@
-:root {
-    --main-color: #fed136;
-    --main-font: ;
-    --main-text-color: #222222;
-    --secondary-text-color: #777777;
+/* rouge-script-regular - latin */
+@font-face {
+  font-family: 'Rouge Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rouge Script'), local('RougeScript-Regular'),
+    url('../fonts/rouge-script-v8-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/rouge-script-v8-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* vollkorn-regular - latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/vollkorn-v11-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/vollkorn-v11-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('../fonts/montserrat-v14-latin-600.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-600.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --main-color: #fed136;
+  --logo-font: 'Rouge Script';
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Roboto Slab', serif;
+  --sub-title-font: 'Vollkorn', serif;
+  --secondary-color: #222222;
+  --secondary-text-color: #777777;
+}
+
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0 auto;
-    padding: 0;
+  margin: 0 auto;
+  padding: 0;
+  font-family: var(--main-font);
 }
 
 ul,
 ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -35,146 +111,255 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
-    width: 940px;
-    margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 1.3px;
+  color: var(--main-color);
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation__list {
-    display: flex;
-    text-transform: uppercase;
+  display: flex;
+  text-transform: uppercase;
 }
 
 .navigation__list-item:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .navigation__list-item-link {
-    color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 1.2px;
+  font-weight: 600;
+  color: var(--secondary-color);
 }
 
 .navigation__list-item-link:hover,
 .navigation__list-item-link:focus {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
-.services {
-    padding: 106px 0px;
+
+/* SERVICES */
+
+.section {
+  padding: 106px 0px;
 }
 
 .section-title {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 19px;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 19px;
 }
 
 .section-sub-title {
-    font-size: 16px;
-    line-height: 1.2;
-    color: var(--secondary-text-color);
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 82px;
+  font-family: var(--sub-title-font);
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 82px;
 }
 
 .services__list {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .services__list-item {
-    flex-basis: calc((940px - 35px*2)/3);
+  flex-basis: calc((940px - 35px * 2) / 3);
 }
 
 .services__list-item:before {
-    content: '';
-    display: block;
-    width: 74px;
-    height: 74px;
-    border-radius: 37px;
-    border: 3px solid var(--main-color);
-    margin: 0 auto;
-    margin-bottom: 26px;
-
+  content: '';
+  display: block;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  margin: 0 auto;
+  margin-bottom: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.e-commerse {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../img/services/icon-e-commerce.png);
+.e-commerse::before {
+  background-image: url(../img/services/icon-e-commerce.png);
 }
 
-.responsive-web {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../img/services/icon-responsive-web.png);
+.responsive-web::before {
+  background-image: url(../img/services/icon-responsive-web.png);
 }
 
-.web-security {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../img/services/icon-web-security.png);
+.web-security::before {
+  background-image: url(../img/services/icon-web-security.png);
 }
 
 .services__list-item:not(:nth-child(3n)) {
-    margin-right: 35px;
+  margin-right: 35px;
 }
 
 .services__list-item-title {
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: -0.45px;
-    color: var(--main-text-color);
-    margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
 }
 
 .services__list-item-text {
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: -0.35px;
-    color: var(--secondary-text-color);
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: -0.35px;
+  color: var(--secondary-text-color);
+  text-align: center;
 }
+
+.contact-us {
+  position: relative;
+  background-color: var(--secondary-color);
+  background-image: url(../img/bg-img/bg-map.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+
+
+/* CONTACT US */
+
+.contact {
+  color: #ffffff;
+}
+
+.contact-form-fields-wrapper {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.contact-form-fields-list-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.contact-form-fields-list-item-input {
+  width: 460px;
+  height: 56px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  margin-right: 28px;
+  padding-left: 20px;
+}
+
+.contact-form-fields-list-item-input,
+.contact-form-fields-textarea {
+  font-family: var(--main-font);
+  letter-spacing: -0.35px;
+  font-weight: 400;
+  outline: none;
+}
+
+.contact-form-fields-list-item-input::placeholder,
+.contact-form-fields-textarea::placeholder {
+  font-family: var(--main-font);
+  letter-spacing: -0.35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+.contact-form-fields-textarea {
+  width: 460px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  padding-left: 20px;
+  padding-top: 18px;
+  resize: none;
+}
+
+.contact-form-fields-list-item-input:focus,
+.contact-form-fields-textarea:focus {
+  outline: none;
+}
+
+.contact-form-fields-list-item-input:required:focus:valid,
+.contact-form-fields-textarea:required:focus:valid {
+  border: 3px solid var(--main-color);
+}
+
+.contact-form-fields-list-item-input:required:focus:invalid,
+.contact-form-fields-textarea:required:focus:invalid {
+  color: rgb(255, 0, 0);
+}
+
+.contact-form-button {
+  display: block;
+  border: none;
+  border-radius: 2px;
+  min-width: 240px;
+  background-color: var(--main-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 25px 46px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
 
 
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
-    position: absolute;
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
