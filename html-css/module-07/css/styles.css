@@ -304,7 +304,7 @@ a {
 }
 
 .contact-form-fields-textarea {
-  width: 460px;
+  width: calc((100% - 28px) / 2);
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(204, 204, 204);
   border-radius: 2px;
