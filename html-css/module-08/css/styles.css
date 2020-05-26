@@ -230,7 +230,6 @@ a {
   background-position: center;
 }
 
-
 .icon-1::after {
   background-image: url(../img/partners/icon1-tv.png);
   background-color: var(--red-color);
@@ -330,6 +329,7 @@ a {
   }
 }
 
+
 /* TABLET */
 
 @media screen and (min-width:768px) {
@@ -379,7 +379,6 @@ a {
     margin-bottom: 36px;
   }
 
-
   .section__list {
     display: flex;
     flex-wrap: wrap;
@@ -387,7 +386,9 @@ a {
     margin: 0 auto;
     margin-bottom: 40px;
   }
+}
 
+@media (min-width:768px) and (max-width:959px) {
   .section__list-item:nth-child(-n+2) {
     margin-bottom: 60px;
   }
