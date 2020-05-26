@@ -332,7 +332,7 @@ a {
 
 /* TABLET */
 
-@media screen and (min-width:768px) and (max-width:959px) {
+@media screen and (min-width:768px) {
   .container {
     width: 748px;
   }
@@ -393,59 +393,20 @@ a {
   }
 }
 
+
+/* DESKTOP */
+
 @media (min-width:960px) {
-  .logo-mobile {
-    display: none;
-  }
-
-
   .container {
     width: 940px;
   }
 
   .header {
     background-image: url(../img/bg/bg-dt.jpg);
-    padding: 38px 0 235px;
-  }
-
-  .logo-mobile {
-    display: none;
-  }
-
-  .header-description-wrapper {
-    width: 532px;
-    margin: 0 auto;
-  }
-
-  .header-title {
-    font-size: 52px;
-    line-height: 1.2;
-    margin-bottom: 40px;
-  }
-
-  .header-description {
-    font-size: 24px;
-    line-height: 1.2;
-    margin-bottom: 36px;
-  }
-
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 148px;
   }
 
   .section__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-
-  .section__list {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
   }
 }
 
