@@ -6,7 +6,8 @@
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
     url('../fonts/Montserrat/') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/Montserrat/montserrat-v14-latin-regular.woff') format('woff');
+      url('../fonts/Montserrat/montserrat-v14-latin-regular.woff')
+      format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -18,7 +19,7 @@
   src: local('Montserrat Bold'), local('Montserrat-Bold'),
     url('../fonts/Montserrat/montserrat-v14-latin-700.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/Montserrat/montserrat-v14-latin-700.woff') format('woff');
+      url('../fonts/Montserrat/montserrat-v14-latin-700.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -30,7 +31,7 @@
   src: local('Roboto Light'), local('Roboto-Light'),
     url('../fonts/Roboto/roboto-v20-latin-300.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/Roboto/roboto-v20-latin-300.woff') format('woff');
+      url('../fonts/Roboto/roboto-v20-latin-300.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -42,7 +43,7 @@
   src: local('Roboto'), local('Roboto-Regular'),
     url('../fonts/Roboto/roboto-v20-latin-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/Roboto/roboto-v20-latin-regular.woff') format('woff');
+      url('../fonts/Roboto/roboto-v20-latin-regular.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -148,6 +149,7 @@ a {
 .sign-up-buttons__list-item-btn:hover,
 .sign-up-buttons__list-item-btn:focus {
   border: 2px solid rgba(255, 255, 255);
+  outline: none;
 }
 
 .header-description-wrapper {
@@ -190,6 +192,7 @@ a {
   border: 2px solid var(--red-color);
   background-color: transparent;
   color: var(--red-color);
+  outline: none;
 }
 
 .section {
@@ -290,14 +293,14 @@ a {
   border: 2px solid transparent;
   background-color: var(--red-color);
   color: #ffffff;
+  outline: none;
 }
-
 
 /* MEDIA */
 
 /* MOBILE */
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .logo-mobile {
     font-size: 20px;
     font-weight: 700;
@@ -329,10 +332,9 @@ a {
   }
 }
 
-
 /* TABLET */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 748px;
   }
@@ -388,16 +390,15 @@ a {
   }
 }
 
-@media (min-width:768px) and (max-width:959px) {
-  .section__list-item:nth-child(-n+2) {
+@media (min-width: 768px) and (max-width: 959px) {
+  .section__list-item:nth-child(-n + 2) {
     margin-bottom: 60px;
   }
 }
 
-
 /* DESKTOP */
 
-@media (min-width:960px) {
+@media (min-width: 960px) {
   .container {
     width: 940px;
   }
@@ -410,7 +411,6 @@ a {
     width: 100%;
   }
 }
-
 
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
