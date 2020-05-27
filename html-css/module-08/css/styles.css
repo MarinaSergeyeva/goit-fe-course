@@ -190,7 +190,7 @@ a {
 .find-button:hover,
 .find-button:focus {
   border: 2px solid var(--red-color);
-  background-color: transparent;
+  background-color: #ffffff;
   color: var(--red-color);
   outline: none;
 }
