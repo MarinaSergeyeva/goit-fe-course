@@ -576,8 +576,8 @@ a {
   margin-bottom: 30px;
 }
 
-.team__list-item:hover .team__list-item-image-wrapper,
-.team__list-item:focus .team__list-item-image-wrapper {
+.team__item:hover .team__item-image-wrapper,
+.team__item:focus .team__item-image-wrapper {
   -webkit-transform: translate(-10px, -10px);
   -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
