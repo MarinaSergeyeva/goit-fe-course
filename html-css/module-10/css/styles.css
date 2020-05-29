@@ -84,15 +84,15 @@ a {
   color: #ffffff;
   text-align: center;
   background-image: -webkit-gradient(linear,
-      left top, right top,
+      left bottom, left top,
       from(rgba(252, 227, 138, 0.9)),
       to(rgba(243, 129, 129, 0.9))),
     url(../img/header/bg.jpg);
-  background-image: -o-linear-gradient(left,
+  background-image: -o-linear-gradient(bottom,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%),
     url(../img/header/bg.jpg);
-  background-image: linear-gradient(90deg,
+  background-image: linear-gradient(0deg,
       rgba(252, 227, 138, 0.9) 0%,
       rgba(243, 129, 129, 0.9) 100%),
     url(../img/header/bg.jpg);
@@ -106,15 +106,15 @@ a {
 (min-resolution: 192dpi) {
   .header {
     background-image: -webkit-gradient(linear,
-        left top, right top,
+        left bottom, left top,
         from(rgba(252, 227, 138, 0.9)),
         to(rgba(243, 129, 129, 0.9))),
       url(../img/header/bg@2x.jpg);
-    background-image: -o-linear-gradient(left,
+    background-image: -o-linear-gradient(bottom,
         rgba(252, 227, 138, 0.9) 0%,
         rgba(243, 129, 129, 0.9) 100%),
       url(../img/header/bg@2x.jpg);
-    background-image: linear-gradient(90deg,
+    background-image: linear-gradient(0deg,
         rgba(252, 227, 138, 0.9) 0%,
         rgba(243, 129, 129, 0.9) 100%),
       url(../img/header/bg@2x.jpg);
